@@ -1,9 +1,11 @@
 package com.franktran;
 
-public class GreetingService {
+import com.franktran.domain.HelloBean;
+
+public class HelloService {
   private HelloBean helloBean;
 
-  public void setHelloBean(HelloBean helloBean) {
+  public HelloService(HelloBean helloBean) {
     this.helloBean = helloBean;
   }
 

@@ -16,6 +16,6 @@ public class AppTest {
 
     @Test
     public void given_when_thenThrowsException() {
-        assertThrows(NoSuchBeanDefinitionException.class, () -> underTest.getHelloBean("greetingService"));
+        assertThrows(NoSuchBeanDefinitionException.class, () -> underTest.getHelloBean("hiBean"));
     }
 }

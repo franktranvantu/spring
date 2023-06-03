@@ -1,17 +1,18 @@
 package com.franktran;
 
+import com.franktran.service.HelloService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App {
     public static void main(String[] args) {
         App app = new App();
-        GreetingService greetingService = app.getGreetingService("greetingService");
-        greetingService.greet();
+        HelloService helloService = app.getGreetingService("greetingService");
+        helloService.greet();
     }
 
-    public GreetingService getGreetingService(String name) {
+    public HelloService getGreetingService(String name) {
         var context = new AnnotationConfigApplicationContext(AppConfig.class);
-        var greetingService = context.getBean(name, GreetingService.class);
+        var greetingService = context.getBean(name, HelloService.class);
         return greetingService;
     }
 }

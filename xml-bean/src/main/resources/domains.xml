@@ -4,5 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 		https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="services.xml" />
+    <bean id="helloBean" class="com.franktran.domain.HelloBean">
+        <constructor-arg name="message" value="Spring!" />
+    </bean>
 </beans>

@@ -1,13 +1,13 @@
-package com.franktran;
+package com.franktran.domain;
 
 public class HelloBean {
   private String message;
 
-  public void setMessage(String message) {
+  public HelloBean(String message) {
     this.message = message;
   }
 
   public void sayHello() {
-    System.out.println(message);
+    System.out.println("Hello, " + message);
   }
 }
