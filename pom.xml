@@ -17,6 +17,7 @@
     <module>ioc</module>
     <module>bean</module>
     <module>bean/instantiating</module>
+    <module>bean/scope</module>
   </modules>
 
   <properties>
